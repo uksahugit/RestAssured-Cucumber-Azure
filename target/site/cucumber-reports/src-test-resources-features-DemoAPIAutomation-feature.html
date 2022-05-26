@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Feature: Testing demo users </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>DemoAPIAutomation</td>
+                          <td>42</td>
+                        <td>27 May 2022, 02:42</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Feature Report</h2>
+  </div>
+
+
+<div class="container-fluid" id="report-summary">
+  <table class="stats-table">
+    <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Feature</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+
+        <tr>
+      <td class="tagname"><a id="stats-Testing demo users" href="src-test-resources-features-DemoAPIAutomation-feature.html">Testing demo users</a></td>
+            <td id="stats-number-scenarios-Testing demo users">1</td>
+      <td id="stats-number-scenarios-passed-Testing demo users">0</td>
+      <td id="stats-number-scenarios-failed-Testing demo users">1</td>
+      <td id="stats-number-steps-Testing demo users">1</td>
+      <td id="stats-number-steps-passed-Testing demo users">0</td>
+      <td id="stats-number-steps-failed-Testing demo users"      class="failed" >1</td>
+      <td id="stats-number-steps-skipped-Testing demo users"   >0</td>
+      <td id="stats-number-steps-pending-Testing demo users"   >0</td>
+      <td id="stats-number-steps-undefined-Testing demo users" >0</td>
+      <td id="stats-number-steps-missing-Testing demo users"   >0</td>
+      <td id="stats-duration-Testing demo users" class="duration-format">01s 162ms</td>
+      <td id="stats-status-Testing demo users" class="failed">Failed</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="container-fluid" id="report-details">
+  <div class="feature-tags"></div>
+  <div class="failed">
+    <div class="feature-line">
+      <span class="feature-keyword">Feature: </span>Testing demo users
+    </div>
+  </div>
+  <div class="feature-description"></div>
+
+      <div class="feature-tags"></div>
+    
+    <div class="failed"><span class="element-keyword">Scenario: </span><span class="element-name">Verify the list of users are retrieved</span></div>
+          <div class="failed"><span class="step-keyword">When  </span><span class="step-name">I try to find the list of users</span><span class="step-duration">01s 162ms</span><div class="output_message"><input class="output_collapse" id="output_1995627225" type="checkbox"><label for="output_1995627225">java.net.UnknownHostException: No such host is known (reqres.in1)</label><div>	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)<br/>	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:932)<br/>	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1505)<br/>	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:851)<br/>	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1495)<br/>	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1354)<br/>	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1288)<br/>	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)<br/>	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)<br/>	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)<br/>	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)<br/>	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)<br/>	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)<br/>	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)<br/>	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)<br/>	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)<br/>	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)<br/>	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)<br/>	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)<br/>	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)<br/>	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)<br/>	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)<br/>	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)<br/>	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1531)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)<br/>	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)<br/>	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br/>	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)<br/>	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)<br/>	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)<br/>	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1290)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)<br/>	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)<br/>	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br/>	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)<br/>	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)<br/>	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)<br/>	at io.restassured.filter.Filter$filter$0.call(Unknown Source)<br/>	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)<br/>	at io.restassured.filter.Filter$filter.call(Unknown Source)<br/>	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)<br/>	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)<br/>	at io.restassured.filter.Filter$filter.call(Unknown Source)<br/>	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)<br/>	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)<br/>	at io.restassured.filter.FilterContext$next.call(Unknown Source)<br/>	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)<br/>	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)<br/>	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)<br/>	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br/>	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)<br/>	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)<br/>	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)<br/>	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1737)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)<br/>	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)<br/>	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)<br/>	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)<br/>	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)<br/>	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)<br/>	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)<br/>	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)<br/>	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:170)<br/>	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)<br/>	at endpoints.UserManipulationEndpoints.listUsers(UserManipulationEndpoints.java:12)<br/>	at steps.UserManipulationStepDefs.i_try_to_find_the_number_of_users(UserManipulationStepDefs.java:17)<br/>	at ✽.When I try to find the list of users(src/test/resources/features/DemoAPIAutomation.feature:4)<br/></div></div></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+  </div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

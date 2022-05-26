@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.58 s <<< FAILURE! - in TestRunner
+When I try to find the list of users(Scenario: Verify the list of users are retrieved)  Time elapsed: 0 s  <<< ERROR!
+java.net.UnknownHostException: No such host is known (reqres.in1)
+
+Scenario: Verify the list of users are retrieved  Time elapsed: 0 s  <<< ERROR!
+java.net.UnknownHostException: No such host is known (reqres.in1)
+

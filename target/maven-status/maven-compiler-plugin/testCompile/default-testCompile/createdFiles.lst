@@ -1,0 +1,5 @@
+utils\ScenarioContext.class
+steps\UserManipulationStepDefs.class
+endpoints\UserManipulationEndpoints.class
+TestRunner.class
+steps\BaseStepDef.class
