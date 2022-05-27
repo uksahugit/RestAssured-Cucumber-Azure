@@ -2,8 +2,8 @@
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'test'
-    options: '-Denv=Test'
+    goals: 'clean install'
+    options: ''
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
@@ -31,4 +31,4 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    goals: 'clean install'
