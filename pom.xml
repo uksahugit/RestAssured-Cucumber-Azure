@@ -61,7 +61,7 @@
                 <activeByDefault>true</activeByDefault>
                 <property>
                     <name>env</name>
-                    <value>Test</value>
+                    <value>QA</value>
                 </property>
             </activation>
             <properties>
@@ -78,12 +78,12 @@
             </build>
         </profile>
         <profile>
-            <id>env-test2</id>
+            <id>env-stage</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
                 <property>
                     <name>env</name>
-                    <value>Test2</value>
+                    <value>STAGING</value>
                 </property>
             </activation>
             <properties>
